@@ -74,3 +74,4 @@
     host: localhost
     password: password
     priv: wiki.*:ALL
+  notify: restart mysql
