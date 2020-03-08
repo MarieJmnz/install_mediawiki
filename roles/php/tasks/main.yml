@@ -1,6 +1,6 @@
 - name: Ajout repository de php
-      apt_repository:
-        repo: 'ppa:ondrej/php'
+  apt_repository:
+    repo: 'ppa:ondrej/php'
 
 - name: Installation php5.6
   package:
