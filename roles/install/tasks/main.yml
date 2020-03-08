@@ -9,9 +9,3 @@
 
 - name: Import images
   command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/images"
-
-- name: Redémarrer la base de données
-  service:
-    name: mysql
-    state: restarted
- 
