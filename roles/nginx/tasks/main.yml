@@ -20,3 +20,9 @@
 - name: Désactivation lien default
   command: unlink /etc/nginx/sites-enabled/default
   notify: restart nginx
+
+- name: Création lien symbolique vers le serveur
+  command: ln -s /appli/projects/md1/nginx /var/www/html
+
+- name: Renommer le lien symbolique en wiki
+  command: mv /var/www/html/nginx /var/www/html/wiki

@@ -8,8 +8,8 @@
     - name: package
     - name: tools
     - name: php
-    - name: nginx
     - name: mysql
+    - name: nginx
     - name: firewall
     - name: unarchive
     - name: install
