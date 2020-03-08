@@ -6,6 +6,7 @@
   roles:
     - name: arborescence
     - name: package
+    - name: tools
     - name: php
     - name: nginx
     - name: mysql
