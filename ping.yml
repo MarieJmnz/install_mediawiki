@@ -1,0 +1,8 @@
+---
+
+- name: ping
+  hosts: mediawiki
+  become: yes
+  tasks:
+    - name: ping MachineCible
+      ping:

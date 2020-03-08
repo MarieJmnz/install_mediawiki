@@ -1,0 +1,7 @@
+- name: Installation outils nécessaires
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - unzip
+    - gnupg

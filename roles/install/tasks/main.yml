@@ -1,0 +1,11 @@
+- name: Install php
+  command: php /appli/projects/md1/nginx/maintenance/install.php --dbname=wiki --dbserver=localhost --dbuser=wiki --dbpass=password --lang=fr --pass=password --scriptpath= --confpath=/appli/projects/md1/nginx "wiki" "wiki"
+
+- name: Import Donnees.xml
+  command: php "/appli/projects/md1/nginx/maintenance/importDump.php" "/appli/wikidevops/LIVR/Donnees.xml"
+
+- name: Rebuild recent changes
+  command: php /appli/projects/md1/nginx/maintenance/rebuildrecentchanges.php
+
+- name: Import images
+  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/images"

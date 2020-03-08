@@ -1,0 +1,16 @@
+- name: installer Nginx
+  package:
+    name: nginx
+    state: present
+
+- name: Démarrer Nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name : Configuration Nginx
+  template:
+    src: default.j2
+    dest: /etc/nginx/sites-available/default
+  notify: restart nginx

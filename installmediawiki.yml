@@ -1,0 +1,14 @@
+---
+
+- name: Installation MediaWiki
+  hosts: mediawiki
+  become: yes
+  roles:
+    - name: arborescence
+    - name: package
+    - name: php
+    - name: nginx
+    - name: mysql
+    - name: firewall
+    - name: unarchive
+    - name: install

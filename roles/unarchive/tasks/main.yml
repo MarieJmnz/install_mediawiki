@@ -1,0 +1,7 @@
+- name: Désarchivage de md1_01.00.00_data.tar.gz
+  unarchive:
+    src: files/md1_01.00.00_data.tar.gz
+    dest: /appli/wikidevops/LIVR
+
+- name: Copie de wiki_devops
+  command: cp -R /appli/wikidevops/LIVR/wiki_devops/. /appli/projects/md1/nginx

@@ -1,0 +1,13 @@
+- name: pare-feu enable
+  ufw:
+    state: enabled
+
+- name: Autoriser ssh
+  ufw:
+    rule: allow
+    name: OpenSSH
+
+- name: Autoriser Nginx
+  ufw:
+    rule: allow
+    name: 'Nginx HTTP'

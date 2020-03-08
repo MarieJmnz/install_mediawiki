@@ -1,0 +1,9 @@
+- name: Copie Donnees.xml dans le répertoire de livraison
+  copy:
+    src: files/Donnees.xml
+    dest: /appli/wikidevops/LIVR
+
+- name: Copie des images dans le répertoire de livraison
+  unarchive:
+    src: files/dump_image.tar.gz
+    dest: /appli/wikidevops/LIVR

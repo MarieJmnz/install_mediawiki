@@ -1,0 +1,39 @@
+- name: Création dossier signature
+  file:
+    path: /etc/conf_machine/
+    state: directory
+
+- name : Création signature
+  file:
+    path: /etc/conf_machine/md1_wikidevops.1.0_linux_ubu18
+    state: touch
+
+- name: Création répertoire de livraison
+  file:
+    path: /appli/wikidevops/LIVR
+    state: directory
+
+- name: Création répertoire application
+  file:
+    path: /appli/projects/md1
+    state: directory
+
+- name: Création implantation base de données
+  file:
+    path: /appli/projects/md1/mysql
+    state: directory
+
+- name: Création répertoire serveur web
+  file:
+    path: /appli/projects/md1/nginx
+    state: directory
+
+- name: Création répertoire logs de la base de données
+  file:
+    path: /var/projects/md1/mysql/log
+    state: directory
+
+- name: Création répertoire logs serveur web
+  file:
+    path: /var/projects/md1/nginx/log
+    state: directory
