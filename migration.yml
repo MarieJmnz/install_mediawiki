@@ -1,0 +1,10 @@
+---
+
+- name: Montée de version de MediaWiki
+  hosts: mediawiki
+  become: yes
+  roles:
+    - name: montee_version_php
+    - name: package_2
+    - name: update
+    - name: extensions
