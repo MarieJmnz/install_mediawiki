@@ -16,6 +16,7 @@
 
 - name: lien symbolique
   command: ln -s /etc/nginx/sites-available/wiki /etc/nginx/sites-enabled
+  warn: false
 
 - name: Désactivation lien default
   command: unlink /etc/nginx/sites-enabled/default
