@@ -17,9 +17,7 @@
     dest: /appli/wikidevops/LIVR
 
 - name: Copie du dossier Theme
-  copy:
-    src: /appli/wikidevops/LIVR/Theme
-    dest: /appli/projects/md1/nginx/extensions
+  command: cp -R /appli/wikidevops/LIVR/Theme /appli/projects/md1/nginx/extensions
 
 - name: Désarchivage de wiki_devops_V01.01.00.tar.gz
   unarchive:
