@@ -8,3 +8,4 @@
 
 - name: Import images
   command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/LoGo"
+  notify: restart nginx
