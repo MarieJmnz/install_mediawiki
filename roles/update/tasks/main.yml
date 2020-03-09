@@ -7,4 +7,4 @@
   command: "/appli/projects/md1/nginx/maintenance/php update.php"
 
 - name: Import images
-  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/images"
+  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/LoGo"
