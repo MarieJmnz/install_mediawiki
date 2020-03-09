@@ -6,6 +6,12 @@
 - name: Lancer le script d'update de la base de données
   command: php "/appli/projects/md1/nginx/maintenance/update.php"
 
+- name: Import Donnees.xml
+  command: php "/appli/projects/md1/nginx/maintenance/importDump.php" "/appli/wikidevops/LIVR/Donnees.xml"
+
+- name: Rebuild recent changes
+  command: php /appli/projects/md1/nginx/maintenance/rebuildrecentchanges.php
+
 - name: Import images
-  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/LoGo"
+  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/images"
   notify: restart nginx
