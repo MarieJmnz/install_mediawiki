@@ -16,6 +16,11 @@
     src: files/Theme-REL1_34-b71d3ac.tar.gz
     dest: /appli/wikidevops/LIVR
 
+- name: Copie du dossier Theme
+  copy:
+    src: /appli/wikidevops/LIVR/Theme
+    dest: /appli/projects/md1/nginx/extensions
+
 - name: Désarchivage de wiki_devops_V01.01.00.tar.gz
   unarchive:
     src: files/wiki_devops_V01.01.00.tar.gz
