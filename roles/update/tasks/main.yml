@@ -4,7 +4,7 @@
     dest: /appli/projects/md1/nginx
 
 - name: Lancer le script d'update de la base de données
-  command: "/appli/projects/md1/nginx/maintenance/php update.php"
+  command: "php /appli/projects/md1/nginx/maintenance/update.php"
 
 - name: Import images
   command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/LoGo"
