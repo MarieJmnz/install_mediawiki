@@ -13,11 +13,11 @@
     - php7.4-json
     - php7.4-mbstring
 
-#- name: Renommer le fichier wiki en wikiold1.24
-#  command: mv /etc/nginx/sites-enabled/wiki /etc/nginx/sites-enabled/wikiold1.24
+- name: Renommer le fichier wiki en wikiold1.24
+  command: mv /etc/nginx/sites-enabled/wiki /etc/nginx/sites-enabled/wikiold1.24
 
-#- name : Configuration Nginx pour php 7.4
-#  template:
-#    src: wiki.j2
-#    dest: /etc/nginx/sites-available/wiki
-#  notify: restart nginx
+- name : Configuration Nginx pour php 7.4
+  template:
+    src: wiki.j2
+    dest: /etc/nginx/sites-available/wiki
+  notify: restart nginx
