@@ -16,9 +16,9 @@
     src: files/Theme-REL1_34-b71d3ac.tar.gz
     dest: /appli/wikidevops/LIVR
 
-- name: Désarchivage de md1_01.01.00_data.tar.gz
+- name: Désarchivage de wiki_devops_V01.01.00.tar.gz
   unarchive:
-    src: files/md1_01.01.00_data.tar.gz
+    src: files/wiki_devops_V01.01.00.tar.gz
     dest: /appli/wikidevops/LIVR
 
 - name: Copie de wiki_devops
