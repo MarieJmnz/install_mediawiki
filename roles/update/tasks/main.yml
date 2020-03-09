@@ -11,7 +11,4 @@
 
 - name: Rebuild recent changes
   command: php /appli/projects/md1/nginx/maintenance/rebuildrecentchanges.php
-
-- name: Import images
-  command: php "/appli/projects/md1/nginx/maintenance/importImages.php" "/appli/wikidevops/LIVR/images"
   notify: restart nginx
