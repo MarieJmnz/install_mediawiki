@@ -16,6 +16,9 @@
     src: files/wiki_devops_V01.01.00.tar.gz
     dest: /appli/wikidevops/LIVR
 
+- name: Copie de wiki_devops
+  command: cp -R /appli/wikidevops/LIVR/wiki_devops_v2/. /appli/projects/md1/nginx
+
 - name: Copie de l'extension Theme dans le répertoire de livraison
   unarchive:
     src: files/Theme-REL1_34-b71d3ac.tar.gz
@@ -26,6 +29,3 @@
 
 - name: Copie du Logo du groupe A dans le répertoire dédié
   command: cp "/appli/wikidevops/LIVR/LoGo/GRA-135.png" "/appli/projects/md1/nginx/resources/assets/"
-
-- name: Copie de wiki_devops
-  command: cp -R /appli/wikidevops/LIVR/wiki_devops_v2/. /appli/projects/md1/nginx
