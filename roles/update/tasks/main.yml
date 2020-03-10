@@ -6,3 +6,6 @@
 - name: Lancer le script d'update de la base de données
   command: php "/appli/projects/md1/nginx/maintenance/update.php"
   notify: restart nginx
+
+- name: Rebuild recent changes
+  command: php /appli/projects/md1/nginx/maintenance/rebuildrecentchanges.php
